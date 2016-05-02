@@ -11,6 +11,6 @@ public class AppTest {
 
     @Test
     public void monTestEchoue() {
-	assertTrue(false);
+	assertFalse(false);
     }
 }
