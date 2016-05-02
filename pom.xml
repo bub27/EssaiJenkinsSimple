@@ -42,5 +42,10 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.jacoco</groupId>
+      <artifactId>jacoco-maven-plugin</artifactId>
+      <version>0.7.6.201602180812</version>
+    </dependency>
   </dependencies>
 </project>
