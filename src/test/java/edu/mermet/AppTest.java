@@ -8,4 +8,9 @@ public class AppTest {
     public void monTest() {
 	assertTrue(true);
     }
+
+    @Test
+    public void monTestEchoue() {
+	assertTrue(false);
+    }
 }

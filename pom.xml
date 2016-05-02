@@ -28,6 +28,13 @@
     </plugins>
   </build>
 
+  <distributionManagement>
+    <repository>
+      <id>depotArchiva</id>
+      <name>depot</name>
+      <url>http://localhost:8100/repository/internal</url>
+    </repository>
+  </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
