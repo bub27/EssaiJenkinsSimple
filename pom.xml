@@ -88,6 +88,11 @@
           </configLocation>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.6</version>
+      </plugin>
     </plugins>
   </build>
 
@@ -122,6 +127,29 @@
             src/main/config/config_checkstyle.xml
           </configLocation>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>2.3</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.6</version>
+	<configuration>
+	  <linkXref>true</linkXref>
+	  <format>html</format>
+	</configuration>
+      </plugin>
+      <plugin>
+	<groupId>org.codehaus.mojo</groupId>
+	<artifactId>findbugs-maven-plugin</artifactId>
+	<version>3.0.1</version>
+	<configuration>
+          <effort>Max</effort>
+          <xmlOutput>true</xmlOutput>
+	</configuration>
       </plugin>
     </plugins>
   </reporting>
